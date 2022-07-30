@@ -1,0 +1,8 @@
+#!/bin/bash
+
+#Run at the Startup of Array
+
+ipmitool -I lanplus -H 192.168.20.20 -U root -P calvin raw 0x30 0x30 0x01 0x00
+
+#Dell fans at 1800rpm
+ipmitool -I lanplus -H 192.168.20.20 -U root -P calvin raw 0x30 0x30 0x02 0xff 0x08
