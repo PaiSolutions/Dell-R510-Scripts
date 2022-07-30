@@ -1,4 +1,7 @@
 #!/bin/bash
+
+#Run with CRON Job 0 0 1 * *
+
 ipmitool -I lanplus -H 192.168.20.20 -U root -P calvin raw 0x30 0x30 0x01 0x00
 
 #Dell Fans at 2040rpm
